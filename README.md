@@ -12,3 +12,4 @@ on a daily basis by a SysAdmin.
 - glances
 - dstat
 - vim
+- git
