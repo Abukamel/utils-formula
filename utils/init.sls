@@ -1,4 +1,4 @@
-{% from "utils-formula/map.jinja" import util, repo with context %}
+{% from "utils-formula/utils/map.jinja" import util, repo with context %}
 ## epel-forumla needs to be at file-roots https://github.com/saltstack-formulas/epel-formula 
 {% include "epel-formula/epel/init.sls" %}
 
