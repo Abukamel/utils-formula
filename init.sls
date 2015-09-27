@@ -5,17 +5,17 @@ install_sysdig:
   cmd.run:
     - name: {{ util.sysdig }}
 install_git:
-  cmd.run:
+  pkg.installed:
     - name: {{ util.git }}
 install_htop:
-  cmd.run:
+  pkg.installed:
     - name: {{ util.htop }}
 install_glances:
-  cmd.run:
+  pkg.installed:
     - name: {{ util.glances }}
 install_dstat:
-  cmd.run:
+  pkg.installed:
     - name: {{ util.dstat }}
 install_vim:
-  cmd.run:
+  pkg.installed:
     - name: {{ util.vim }}
