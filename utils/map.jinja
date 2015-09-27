@@ -1,18 +1,32 @@
 {% set util = salt['grains.filter_by']({
     'Debian': {
-        'htop': 'htop',
-        'dstat': 'dstat',
-        'vim': 'vim',
-        'glances': 'glances',
-        'git': 'git',
+        'pkg': {
+            'htop': 'htop',
+            'dstat': 'dstat',
+            'vim': 'vim',
+            'glances': 'glances',
+            'git': 'git',
+            'curl': 'curl',
+            'wget': 'wget',
+            'httpie': 'httpie',
+            'bash-completion': 'bash-completion',
+            'zsh': 'zsh',
+        }
         'sysdig': 'curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash',
     },
     'RedHat': {
-        'htop': 'htop',
-        'dstat': 'dstat',
-        'vim': 'vim-enhanced',
-        'glances': 'glances',
-        'git': 'git',
+        'pkg': {
+            'htop': 'htop',
+            'dstat': 'dstat',
+            'vim': 'vim-enhanced',
+            'glances': 'glances',
+            'git': 'git',
+            'curl': 'curl',
+            'wget': 'wget',
+            'httpie': 'httpie',
+            'bash-completion': 'bash-completion',
+            'zsh': 'zsh',
+        }
         'sysdig': 'curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash',
     },
 }) %}

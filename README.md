@@ -13,3 +13,7 @@ on a daily basis by a SysAdmin.
 - dstat
 - vim
 - git
+- wget
+- curl
+- httpie
+- bash-completion
