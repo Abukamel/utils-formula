@@ -6,7 +6,6 @@
         'glances': 'glances',
         'git': 'git',
         'sysdig': 'curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash',
-        'epel': '',
     },
     'RedHat': {
         'htop': 'htop',
@@ -15,6 +14,10 @@
         'glances': 'glances',
         'git': 'git',
         'sysdig': 'curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash',
-        'epel': 'epel-release',
     },
 }) %}
+{% set repo = salt['grains.filter_by']({
+    'RedHat': {
+        'epel': 'epel-release',
+    }
+})%}

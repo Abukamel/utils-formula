@@ -1,7 +1,7 @@
-{% from "utils-formula/map.jinja" import util with context %}
+{% from "utils-formula/map.jinja" import util, repo with context %}
 install_epel_repo:
   pkg.installed:
-    - name: {{ util.epel }}
+    - name: {{ repo.epel }}
 install_sysdig:
   cmd.run:
     - name: {{ util.sysdig }}
