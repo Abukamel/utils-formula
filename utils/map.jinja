@@ -29,5 +29,5 @@
         },
         'sysdig': 'curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | bash',
     }
-}
+}%}
 {% set util = salt['grains.filter_by'](packages, grain='os_family') %}
